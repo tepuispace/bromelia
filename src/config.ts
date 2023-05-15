@@ -1,10 +1,10 @@
 export const SITE = {
-  title: "Astro Design System",
-  description: "Astro theme to build your design system fast.",
+  title: "Intelligent systems",
+  description: "Computer-based systems that demonstrate intelligent behavior, including perception, reasoning, learning, and adaptation, to assist or replace human decision-making in complex and dynamic environments",
   defaultLanguage: "en_US",
-  twitter: "@jordienr",
-  github: "jordienr",
-  linkedin: "linkedinUsername",
+  twitter: "@castillo9x",
+  github: "rcastillo9x",
+  linkedin: "randolfo-castillo-0451265",
 };
 
 export const OPEN_GRAPH = {
@@ -16,11 +16,16 @@ export const OPEN_GRAPH = {
 };
 
 export const SIDEBAR = [
-  { text: "Core", header: true },
-  { text: "Introduction", link: "/core/introduction" },
-  { text: "Colors", link: "/core/colors" },
-  { text: "Typography", link: "/core/typography" },
-  { text: "Shadows", link: "/core/shadows" },
+  { text: "Agent theory", header: true },
+  { text: "Theory", link: "/agent/theory" },
+  { text: "Types", link: "/agent/types" },
+  { text: "Characteristics", link: "/agent/characteristics" },
+  { text: "Miltiagent", link: "/agent/mas" },
+  { text: "Ubiquitous systems", link: "/agent/ubiquitous-systems" },
+  { text: "REAS", link: "/agent/reas" },
+  { text: "Types of environments", link: "/agent/enviroment" },
+  { text: "Types of programs", link: "/agent/programs-types" },
+
 
   { text: "Components", header: true },
   { text: "Buttons", link: "/components/buttons" },

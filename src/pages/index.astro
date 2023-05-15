@@ -2,22 +2,33 @@
 import { SITE } from "../config";
 const navItems = [
 	{
-		title: 'Core',
-		description: 'Base colors, typography, shadows, and more.',
-		url: '/core/introduction',
-		img: '/Core.jpg'
+		title: 'Agent theory',
+		url: '/agent/theory',
 	},
 	{
-		title: 'Components',
+		title: 'Information and knowledge',
 		description: 'The building blocks for our UI.',
 		url: '/components/buttons',
-		img: '/Components.jpg'
 	},
 	{
-		title: 'Patterns',
+		title: 'Knowledge representation',
 		description: 'Common patterns for building interfaces.',
 		url: '/patterns/introduction',
-		img: '/Patterns.jpg'
+	},
+	{
+		title: 'Ontologies',
+		description: 'Common patterns for building interfaces.',
+		url: '/patterns/introduction',
+	},
+	{
+		title: 'Ontology languages and software for the creation of ontologies',
+		description: 'Common patterns for building interfaces.',
+		url: '/patterns/introduction',
+	},
+	{
+		title: 'Other models of knowledge representation',
+		description: 'Common patterns for building interfaces.',
+		url: '/patterns/introduction',
 	}
 ]
 
@@ -28,7 +39,7 @@ const navItems = [
 <div class="bg-slate-100 min-h-screen text-center">
 	<header class="pt-12 pb-24 px-4 bg-gradient-to-br from-slate-700 to-black">
 		<div class="flex items-center justify-center p-4">
-			<img src="/astro-design-system-logo.svg" alt="Astro Design System Logo">
+			<img src="/agent.png" alt="Agent Logo">
 		</div>
 		<h1 class=" text-white text-4xl font-medium drop-shadow-sm">{SITE.title}</h1>
 		<p class="text-lg mt-4 text-slate-300">{SITE.description}</p>
