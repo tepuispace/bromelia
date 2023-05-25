@@ -19,7 +19,7 @@ Multi-agent systems (MAS) refer to a field of study in artificial intelligence (
 
 • *Heterogeneity*: Agents in a multi-agent system can have different capabilities, knowledge, and roles, allowing for specialization and diversity in problem-solving approaches.
 
-Applications of Multi-Agent Systems:
+## Applications of Multi-Agent Systems:
 
 • *Robotics and Automation*: Multi-agent systems are applied in robotics for tasks such as cooperative manipulation, swarm robotics, and coordination of autonomous robots in complex environments.
 

@@ -20,7 +20,7 @@ export const SIDEBAR = [
   { text: "Theory", link: "/agent/theory" },
   { text: "Types", link: "/agent/types" },
   { text: "Characteristics", link: "/agent/characteristics" },
-  { text: "Miltiagent", link: "/agent/mas" },
+  { text: "Multiagent", link: "/agent/mas" },
   { text: "Ubiquitous systems", link: "/agent/ubiquitous-systems" },
   { text: "REAS", link: "/agent/reas" },
   { text: "Types of environments", link: "/agent/enviroment" },
