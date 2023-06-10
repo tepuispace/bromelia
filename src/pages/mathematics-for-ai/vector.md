@@ -4,7 +4,7 @@ description: Docs intro
 layout: ../../layouts/MainLayout.astro
 ---
 
-# Vector
+# Vectors 
 
 Intelligent systems are computer-based systems that demonstrate intelligent behavior, including perception, reasoning, learning, and adaptation, to assist or replace human decision-making in complex and dynamic environments. These systems are designed to be flexible, autonomous, and able to learn from experience to improve their performance over time.
 
