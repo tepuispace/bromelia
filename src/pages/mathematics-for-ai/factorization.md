@@ -13,9 +13,9 @@ The autonomy of an intelligent agent refers to its ability to act and make decis
 
 In a general sense, autonomy can be defined by the extent to which an agent can:
 
-• Perceive and sense its environment: An autonomous agent should be able to gather information from its environment using sensors or other means of perception.
+• *Perceive and sense its environment*: An autonomous agent should be able to gather information from its environment using sensors or other means of perception.
 
-• Reason and make decisions: The agent should possess reasoning capabilities to process the acquired information, apply knowledge and rules, and make decisions based on its goals and objectives.
+• *Reason and make decisions*: The agent should possess reasoning capabilities to process the acquired information, apply knowledge and rules, and make decisions based on its goals and objectives.
 
 It's important to note that autonomy is often relative and can exist on a spectrum. Different agents may have varying degrees of autonomy, depending on the level of human control or intervention involved
 

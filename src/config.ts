@@ -1,6 +1,6 @@
 export const SITE = {
-  title: "Intelligent systems",
-  description: "Computer-based systems that demonstrate intelligent behavior, including perception, reasoning, learning, and adaptation, to assist or replace human decision-making in complex and dynamic environments",
+  title: "AI Self-Study",
+  description: "This space is to summarize the topics related to AI and its real application",
   defaultLanguage: "en_US",
   twitter: "@castillo9x",
   github: "rcastillo9x",
@@ -16,22 +16,23 @@ export const OPEN_GRAPH = {
 };
 
 export const SIDEBAR = [
-  { text: "Agent theory", header: true },
-  { text: "Theory", link: "/agent/theory" },
-  { text: "Types", link: "/agent/types" },
-  { text: "Characteristics", link: "/agent/characteristics" },
-  { text: "Multiagent", link: "/agent/mas" },
-  { text: "Ubiquitous systems", link: "/agent/ubiquitous-systems" },
-  { text: "REAS", link: "/agent/reas" },
-  { text: "Types of environments", link: "/agent/enviroment" },
-  { text: "Types of programs", link: "/agent/programs-types" },
+  { text: "Mathematics for AI", header: false },
+  { text: "Vector", link: "/mathematics-for-ai/vector" },
+  { text: "Matrices", link: "/mathematics-for-ai/matrices" },
+  { text: "Factorizaction", link: "/mathematics-for-ai/factorization" },
+  { text: "Functions", link: "/mathematics-for-ai/fucntions" },
+  { text: "Optimization", link: "/mathematics-for-ai/optimization" },
+  { text: "Probability", link: "/mathematics-for-ai/probability" },
+  { text: "Statistics", link: "/mathematics-for-ai/statistics" },
+  { text: "Statistical Learning", link: "/mathematics-for-ai/statistical-learning" },
+  { text: "Reasoning", link: "/mathematics-for-ai/vector" },
+  { text: "Types of architecture of intelligent agents", link: "/mathematics-for-ai/vector" },
 
-
-  { text: "Components", header: true },
-  { text: "Buttons", link: "/components/buttons" },
-  { text: "Input", link: "/components/input" },
-  { text: "Status pills", link: "/components/status-pill" },
-  { text: "Table", link: "/components/table" },
+  { text: "Information and knowledge.", header: true },
+  { text: "Data, Information ...", link: "/information/information" },
+  { text: "Types of data", link: "/information/types" },
+  { text: "Knowledge", link: "/information/knowledge" },
+  { text: "Data quality", link: "/information/data-quality" },
 
   { text: "Patterns", header: true },
   { text: "Introduction", link: "/patterns/introduction" },
