@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-us" class="initial">
+	<head>
+		<!-- Global Metadata --><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="alternate icon" type="image/x-icon" href="/favicon.ico">
+
+<link rel="sitemap" href="/sitemap.xml">
+
+<!-- Preload Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&display=swap" rel="stylesheet">
+
+<!-- Scrollable a11y code helper -->
+<script src="/make-scrollable-code-focusable.js"></script>
+
+<!-- This is intentionally inlined to avoid FOUC -->
+<script>
+	const root = document.documentElement;
+	const theme = localStorage.getItem('theme');
+	if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+		root.classList.add('dark');
+	} else {
+		root.classList.remove('dark');
+	}
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=" is:inline></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '');
+</script> -->
+
+		<!-- Page Metadata --><link rel="canonical" href="http://localhost:3000/mathematics-for-ai/vector/">
+
+<!-- OpenGraph Tags -->
+<meta property="og:title" content="Vector 🚀 AI Self-Study">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://localhost:3000/mathematics-for-ai/vector/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://astro.build/">
+<meta property="og:image:alt" content="">
+<meta name="description" property="og:description" content="Vectors intro">
+<meta property="og:site_name" content="AI Self-Study">
+
+<!-- Twitter Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="">
+<meta name="twitter:title" content="Vector 🚀 AI Self-Study">
+<meta name="twitter:description" content="Vectors intro">
+<meta name="twitter:image" content="https://astro.build/">
+<meta name="twitter:image:alt" content="">
+
+<!--
+  TODO: Add json+ld data, maybe https://schema.org/APIReference makes sense?
+  Docs: https://developers.google.com/search/docs/advanced/structured-data/intro-structured-data
+  https://www.npmjs.com/package/schema-dts seems like a great resource for implementing this.
+  Even better, there's a React component that integrates with `schema-dts`: https://github.com/google/react-schemaorg
+-->
+
+		<title>Vector 🚀 AI Self-Study</title>
+	<link rel="stylesheet" href="/assets/asset.543c3d91.css"></link>
+</head>
+
+	<body class="bg-slate-100">
+		<div class="sticky top-0 z-10 w-full">
+			<header class="p-3 bg-slate-100 bg-opacity-80 backdrop-blur-md border-b text-slate-900">
+	<a href="#article" class="sr-only focus:not-sr-only skiplink"><span>Skip to Content</span></a>
+
+	<nav title="Top Navigation" class="max-w-7xl mx-auto flex justify-between items-center px-4">
+		<div>
+			<a class="text-lg font-medium" href="/">
+				<h1>
+					AI Self-Study
+				</h1>
+			</a>
+		</div>
+		<div class="flex gap-2">
+		
+		<!-- <button onclick="toggleDarkMode()">theme</button> -->
+		<a title="Twitter" class="opacity-90 hover:opacity-100 hover:bg-blue-100 p-2 rounded-full transition-colors" href="https://twitter.com/@castillo9x">
+				<img class="h-7" src="/twitter.svg" alt="twitter logo">
+			</a>
+		<a title="Github" class="opacity-80 hover:opacity-100 hover:bg-slate-200 p-2 rounded-full transition-colors" href="https://github.com/rcastillo9x">
+				<img class="h-7" src="/github.svg" alt="github logo">
+			</a>
+		<a title="linkedin" class="opacity-80 hover:opacity-100 hover:bg-blue-50 p-2 rounded-full transition-colors" href="https://linkedin.com/in/randolfo-castillo-0451265">
+				<img class="h-7" src="/linkedin.svg" alt="linkedin logo">
+			</a>
+		</div>
+	</nav>
+</header>
+
+<script>
+	// function toggleDarkMode() {
+	// 	const body = document.body;
+	// 	body.classList.toggle('dark');
+	// 	console.log('dark mode toggled');
+	// }
+</script>
+
+		</div>
+		<div class="grid grid-cols-12">
+			<div class="col-span-3 sticky top-0 pt-12 h-screen flex">
+				<div class="ml-auto">
+					<aside title="Site Navigation">
+	<!-- <Debug content={navigation} /> -->
+	<nav aria-labelledby="grid-left" class="w-64 p-4 border-r">
+		<ul>
+			<li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a>Mathematics for AI</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900 border-slate-500 text-slate-900">
+					<a href="/mathematics-for-ai/vector">Vector</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/mathematics-for-ai/matrices">Matrices</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/mathematics-for-ai/factorization">Factorizaction</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/mathematics-for-ai/fucntions">Functions</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/mathematics-for-ai/optimization">Optimization</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/mathematics-for-ai/probability">Probability</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/mathematics-for-ai/statistics">Statistics</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/mathematics-for-ai/statistical-learning">Statistical Learning</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900 border-slate-500 text-slate-900">
+					<a href="/mathematics-for-ai/vector">Reasoning</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900 border-slate-500 text-slate-900">
+					<a href="/mathematics-for-ai/vector">Types of architecture of intelligent agents</a>
+				</li><h2 class="mt-4 font-semibold text-slate-700">Information and knowledge.</h2><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/information/information">Data, Information ...</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/information/types">Types of data</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/information/knowledge">Knowledge</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/information/data-quality">Data quality</a>
+				</li><h2 class="mt-4 font-semibold text-slate-700">Patterns</h2><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/patterns/introduction">Introduction</a>
+				</li>
+		</ul>
+	</nav>
+</aside>
+
+<script>
+	window.addEventListener('DOMContentLoaded', (event) => {
+		var target = document.querySelector('[aria-current="page"]');
+		if (target && target.offsetTop > window.innerHeight - 100) {
+			document.querySelector('.nav-groups').scrollTop = target.offsetTop;
+		}
+	});
+</script>
+
+
+				</div>
+			</div>
+			<main class="py-4 px-8 pb-32 col-span-6  overflow-auto">
+				<div>
+					<article id="article" class="content">
+	<section class="main-section">
+		<nav class="block sm:hidden">
+		</nav>
+		<h1 id="vectors">Vectors</h1><div class="math math-display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>L</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>ρ</mi><msup><mi>v</mi><mn>2</mn></msup><mi>S</mi><msub><mi>C</mi><mi>L</mi></msub></mrow><annotation encoding="application/x-tex">L = \frac12 \rho v^2 S C_L</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">L</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.0074em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord mathnormal">ρ</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.0715em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">L</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span></div><h2 id="what-is-a-vector-mathematically-">What is a vector mathematically ?</h2><p>In mathematics, a vector is a quantity that has both magnitude and direction. It can be represented by a directed line segment, whose length is the magnitude of the vector and with an arrow indicating the direction. The direction of the vector is from its tail to its head. Two vectors are the same if they have the same magnitude and direction.</p><p>Vectors are often used to represent physical quantities such as force, velocity, and acceleration. They can also be used to represent geometric objects such as lines, planes, and volumes.</p><p><strong>Characteristics</strong></p><ul>
+<li>
+<p><strong>Magnitude:</strong> The magnitude of a vector is its length. It is a non-negative number.</p>
+</li>
+<li>
+<p><strong>Direction:</strong> The direction of a vector is the direction in which it points. It can be represented by an angle or a unit vector.</p>
+</li>
+</ul><p><img src="../../../public/vector.png" alt="alt text" title="Vector"></p><ul>
+<li><strong>Linearity:</strong> Vectors can be added and subtracted in a way that preserves their magnitude and direction.</li>
+<li><strong>Associativity:</strong> The order in which vectors are added or subtracted does not matter.</li>
+<li><strong>Commutativity:</strong> Vector addition and subtraction are commutative operations, meaning that the order of the vectors does not matter.</li>
+<li><strong>Scalar multiplication:</strong> Vectors can be multiplied by scalars, which are numbers. Scalar multiplication changes the magnitude of a vector but not its direction.</li>
+<li><strong>Vector multiplication:</strong> Vectors can be multiplied by other vectors. Vector multiplication is a more complex operation that can be used to find the area of a parallelogram or the volume of a parallelepiped.</li>
+</ul><p><strong>Vector in computation and AI</strong></p><p>In the field of computing, vectors are defined similarly to how they are defined in mathematics, but they are also used in specific contexts related to artificial intelligence (AI). In AI, vectors are used to represent and manipulate data in the form of one-dimensional arrays.</p><p>In the context of AI, a vector can represent a specific entity or characteristic of a data set. For example, in natural language processing, a vector can represent a word in a vocabulary or an entire document. In image recognition, a vector can represent an image as a series of numerical values that describe the key features of that image.</p><p>Vectors in AI are used in techniques such as machine learning and deep learning. For example, in machine learning, vectors are used to represent input and output features in machine learning models. These vectors can be used to train models and make predictions on new data.</p><p>In addition, vectors are also used in dimensionality reduction techniques, such as principal component analysis (PCA) and t-SNE, where one seeks to represent complex data in a vector space of smaller dimension without losing important information.</p>
+	</section>
+</article>
+
+
+				</div>
+			</main>
+			<div class="col-span-3 sticky top-0 h-screen flex">
+				<nav aria-labelledby="grid-right">
+	<div class="px-8">
+		<ul class="flex flex-col gap-4 mt-24">
+	<li class="text-slate-400 hover:text-slate-800 hover:text-slate-900">
+			#<a href="#vectors">Vectors</a>
+		</li><li class="text-slate-400 hover:text-slate-800 hover:text-slate-900">
+			#<a href="#what-is-a-vector-mathematically-">What is a vector mathematically ?</a>
+		</li>
+</ul>
+	</div>
+</nav>
+			</div>
+		</div>
+	</body></html>
