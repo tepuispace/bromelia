@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-us" class="initial">
+	<head>
+		<!-- Global Metadata --><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="alternate icon" type="image/x-icon" href="/favicon.ico">
+
+<link rel="sitemap" href="/sitemap.xml">
+
+<!-- Preload Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&display=swap" rel="stylesheet">
+
+<!-- Scrollable a11y code helper -->
+<script src="/make-scrollable-code-focusable.js"></script>
+
+<!-- This is intentionally inlined to avoid FOUC -->
+<script>
+	const root = document.documentElement;
+	const theme = localStorage.getItem('theme');
+	if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+		root.classList.add('dark');
+	} else {
+		root.classList.remove('dark');
+	}
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=" is:inline></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '');
+</script> -->
+
+		<!-- Page Metadata --><link rel="canonical" href="http://localhost:3000/mathematics-for-ai/statistics/">
+
+<!-- OpenGraph Tags -->
+<meta property="og:title" content="AI Self-Study">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://localhost:3000/mathematics-for-ai/statistics/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://astro.build/">
+<meta property="og:image:alt" content="">
+<meta name="description" property="og:description" content="This space is to summarize the topics related to AI and its real application">
+<meta property="og:site_name" content="AI Self-Study">
+
+<!-- Twitter Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="">
+<meta name="twitter:title" content="AI Self-Study">
+<meta name="twitter:description" content="This space is to summarize the topics related to AI and its real application">
+<meta name="twitter:image" content="https://astro.build/">
+<meta name="twitter:image:alt" content="">
+
+<!--
+  TODO: Add json+ld data, maybe https://schema.org/APIReference makes sense?
+  Docs: https://developers.google.com/search/docs/advanced/structured-data/intro-structured-data
+  https://www.npmjs.com/package/schema-dts seems like a great resource for implementing this.
+  Even better, there's a React component that integrates with `schema-dts`: https://github.com/google/react-schemaorg
+-->
+
+		<title>AI Self-Study</title>
+	<link rel="stylesheet" href="/assets/asset.543c3d91.css"></link>
+</head>
+
+	<body class="bg-slate-100">
+		<div class="sticky top-0 z-10 w-full">
+			<header class="p-3 bg-slate-100 bg-opacity-80 backdrop-blur-md border-b text-slate-900">
+	<a href="#article" class="sr-only focus:not-sr-only skiplink"><span>Skip to Content</span></a>
+
+	<nav title="Top Navigation" class="max-w-7xl mx-auto flex justify-between items-center px-4">
+		<div>
+			<a class="text-lg font-medium" href="/">
+				<h1>
+					AI Self-Study
+				</h1>
+			</a>
+		</div>
+		<div class="flex gap-2">
+		
+		<!-- <button onclick="toggleDarkMode()">theme</button> -->
+		<a title="Twitter" class="opacity-90 hover:opacity-100 hover:bg-blue-100 p-2 rounded-full transition-colors" href="https://twitter.com/@castillo9x">
+				<img class="h-7" src="/twitter.svg" alt="twitter logo">
+			</a>
+		<a title="Github" class="opacity-80 hover:opacity-100 hover:bg-slate-200 p-2 rounded-full transition-colors" href="https://github.com/rcastillo9x">
+				<img class="h-7" src="/github.svg" alt="github logo">
+			</a>
+		<a title="linkedin" class="opacity-80 hover:opacity-100 hover:bg-blue-50 p-2 rounded-full transition-colors" href="https://linkedin.com/in/randolfo-castillo-0451265">
+				<img class="h-7" src="/linkedin.svg" alt="linkedin logo">
+			</a>
+		</div>
+	</nav>
+</header>
+
+<script>
+	// function toggleDarkMode() {
+	// 	const body = document.body;
+	// 	body.classList.toggle('dark');
+	// 	console.log('dark mode toggled');
+	// }
+</script>
+
+		</div>
+		<div class="grid grid-cols-12">
+			<div class="col-span-3 sticky top-0 pt-12 h-screen flex">
+				<div class="ml-auto">
+					<aside title="Site Navigation">
+	<!-- <Debug content={navigation} /> -->
+	<nav aria-labelledby="grid-left" class="w-64 p-4 border-r">
+		<ul>
+			<li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a>Mathematics for AI</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/mathematics-for-ai/vector">Vector</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/mathematics-for-ai/matrices">Matrices</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/mathematics-for-ai/factorization">Factorizaction</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/mathematics-for-ai/fucntions">Functions</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/mathematics-for-ai/optimization">Optimization</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/mathematics-for-ai/probability">Probability</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900 border-slate-500 text-slate-900">
+					<a href="/mathematics-for-ai/statistics">Statistics</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/mathematics-for-ai/statistical-learning">Statistical Learning</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/mathematics-for-ai/vector">Reasoning</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/mathematics-for-ai/vector">Types of architecture of intelligent agents</a>
+				</li><h2 class="mt-4 font-semibold text-slate-700">Information and knowledge.</h2><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/information/information">Data, Information ...</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/information/types">Types of data</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/information/knowledge">Knowledge</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/information/data-quality">Data quality</a>
+				</li><h2 class="mt-4 font-semibold text-slate-700">Patterns</h2><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/patterns/introduction">Introduction</a>
+				</li>
+		</ul>
+	</nav>
+</aside>
+
+<script>
+	window.addEventListener('DOMContentLoaded', (event) => {
+		var target = document.querySelector('[aria-current="page"]');
+		if (target && target.offsetTop > window.innerHeight - 100) {
+			document.querySelector('.nav-groups').scrollTop = target.offsetTop;
+		}
+	});
+</script>
+
+
+				</div>
+			</div>
+			<main class="py-4 px-8 pb-32 col-span-6  overflow-auto">
+				<div>
+					<article id="article" class="content">
+	<section class="main-section">
+		<nav class="block sm:hidden">
+		</nav>
+		<h1 id="reasoning-of-a-agent">Reasoning of a agent</h1><h2 id="definiton-1">Definiton 1</h2><p>Automated reasoning is a field of computer science dedicated to understanding different aspects of reasoning, it can also be
+to say that it is a method that allows to write programs to make inferences in a complete or
+almost automatic. This is generally considered a subfield of artificial intelligence, but also
+has strong links to the theory of computing and philosophy</p><h2 id="definiton-2">Definiton 2</h2><p>An agent’s reasoning refers to the process by which an intelligent agent (such as an AI system) makes decisions based on available information, applying logic and algorithms to process that information and arrive at conclusions. Reasoning can be deductive, inductive, or abductive, depending on how data is used to form conclusions. Through reasoning, an agent can learn from past experiences, adapt to new situations, solve problems, and achieve goals.</p><h2 id="types-of-reasoning">Types of reasoning</h2><p>• <em>Deductive Reasoning</em>: This is a type of reasoning that starts with general principles or premises and deduces specific applications or outcomes. The conclusion in deductive reasoning is logically drawn from the given premises, and if the premises are true, then the conclusion must also be true. An example could be: “All men are mortal (premise). Socrates is a man (premise). Therefore, Socrates is mortal (conclusion).”</p><p>• <em>Inductive Reasoning</em>: Unlike deductive reasoning, inductive reasoning moves from specific observations to broader generalizations and theories. It involves making predictions or hypotheses and testing them for validity. For example, after observing that birds fly, one might inductively infer that all birds can fly. However, unlike deductive reasoning, inductive reasoning can lead to conclusions that are probably true but not necessarily guaranteed.</p><p>• <em>Abductive Reasoning</em>: This is a form of reasoning where one makes a ‘best guess’ or inference to the most plausible explanation. It starts with an incomplete set of observations and leads to the most likely, albeit tentative, explanation. An example would be coming across a wet lawn (observation) and concluding that it rained recently (explanation) – even though there could be other explanations like a sprinkler system.</p><p>These three forms of reasoning are often used by AI systems and other intelligent agents to understand their environment, make predictions, and take action.</p><h2 id="reasoning-versus-rationalization">Reasoning versus Rationalization</h2><p>Reasoning and rationalization are two related but distinct cognitive processes.</p><p>Reasoning is an objective thought process used to arrive at a conclusion or make a decision. It involves using logic and applying rules and principles to interpret available information and form a conclusion or judgment. Reasoning can be deductive, inductive, or abductive, as we mentioned before.</p><p>On the other hand, rationalization is a more subjective process used to justify or explain a decision or behavior that has already been made or has already occurred. Often, rationalization can be influenced by confirmation bias, where people seek out and process information in a way that confirms their existing beliefs and decisions, rather than objectively evaluating all available information.</p><h2 id="inputs--outputs">Inputs &#x26; Outputs</h2><h3 id="inputs">Inputs</h3><p>• Previous knowledge of the world</p><p>• Past experience learned</p><p>• Values about goals and important things to achieve</p><p>• Observations about the surrounding environment</p><h3 id="outputs">Outputs</h3><p>• Actions</p><h3 id="inflow">Inflow</h3><p><img src="../../../public/flow-input.png" alt="alt text" title="Flow input"></p>
+	</section>
+</article>
+
+
+				</div>
+			</main>
+			<div class="col-span-3 sticky top-0 h-screen flex">
+				<nav aria-labelledby="grid-right">
+	<div class="px-8">
+		<ul class="flex flex-col gap-4 mt-24">
+	<li class="text-slate-400 hover:text-slate-800 hover:text-slate-900">
+			#<a href="#reasoning-of-a-agent">Reasoning of a agent</a>
+		</li><li class="text-slate-400 hover:text-slate-800 hover:text-slate-900">
+			#<a href="#definiton-1">Definiton 1</a>
+		</li><li class="text-slate-400 hover:text-slate-800 hover:text-slate-900">
+			#<a href="#definiton-2">Definiton 2</a>
+		</li><li class="text-slate-400 hover:text-slate-800 hover:text-slate-900">
+			#<a href="#types-of-reasoning">Types of reasoning</a>
+		</li><li class="text-slate-400 hover:text-slate-800 hover:text-slate-900">
+			#<a href="#reasoning-versus-rationalization">Reasoning versus Rationalization</a>
+		</li><li class="text-slate-400 hover:text-slate-800 hover:text-slate-900">
+			#<a href="#inputs--outputs">Inputs &amp; Outputs</a>
+		</li><li class="text-slate-400 hover:text-slate-800 hover:text-slate-900">
+			#<a href="#inputs">Inputs</a>
+		</li><li class="text-slate-400 hover:text-slate-800 hover:text-slate-900">
+			#<a href="#outputs">Outputs</a>
+		</li><li class="text-slate-400 hover:text-slate-800 hover:text-slate-900">
+			#<a href="#inflow">Inflow</a>
+		</li>
+</ul>
+	</div>
+</nav>
+			</div>
+		</div>
+	</body></html>

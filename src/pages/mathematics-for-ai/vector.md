@@ -1,51 +1,47 @@
 ---
-title: Agent theory
-description: Docs intro
+title: Vector
+description: Vectors intro
 layout: ../../layouts/MainLayout.astro
 ---
 
 # Vectors 
 
-Intelligent systems are computer-based systems that demonstrate intelligent behavior, including perception, reasoning, learning, and adaptation, to assist or replace human decision-making in complex and dynamic environments. These systems are designed to be flexible, autonomous, and able to learn from experience to improve their performance over time.
-
-Today there are three basic computational areas related to the development and definition of agents.
-related to the development and definition of agents
-
-**Human-machine interface design**
-
-**AI**
-
-**Object-oriented programming / concurrent programming concurrent** 
+$$
+L = \frac{1}{2} \rho v^2 S C_L
+$$
 
 
-The concept of agents also provides a convenient and powerful way to describe a system
-computer complex of entity located in some environment that can operate with some degree of autonomy
-to complete a task on behalf of a server, that is, sensitive input from that environment and, based on this knowledge through resolution techniques of problems, they determine actions to achieve their
-objectives and carry them out autonomously and flexibly. However, unlike the objects that are defined in terms of methods and attributes, the agents are defined in terms of their behavior
 
-However, there is no definition generally accepted from an agent. Actually, it consists of a
-set of objectives and sometimes in a library ofplans.
+## What is a vector mathematically ?
 
-## Agent in artificial intelligence
+In mathematics, a vector is a quantity that has both magnitude and direction. It can be represented by a directed line segment, whose length is the magnitude of the vector and with an arrow indicating the direction. The direction of the vector is from its tail to its head. Two vectors are the same if they have the same magnitude and direction.
 
-An intelligent agent is an entity that can recognize an environment, handle knowledge,
-to react in a reasonable manner or to act in that environment correctly, it tends to maximize the
-expected results with the help of sensors and recognize the environment using actuators, i.e.,
-the elements that respond to stimuli in action to act in this work
+Vectors are often used to represent physical quantities such as force, velocity, and acceleration. They can also be used to represent geometric objects such as lines, planes, and volumes.
 
-Intelligent agents are a mechanism that works to achieve predetermined objectives and are represented schematically as an abstract functional system. For this reason, intelligent agents are sometimes they are called abstract intelligent agents (AIAS) for distinguish them from their actual applications
+**Characteristics**
 
-### Areas
 
-Intelligent agents are applied in a wide variety of fields and sectors all over the world. Some of the areas in which smart agents are used are:
+* **Magnitude:** The magnitude of a vector is its length. It is a non-negative number.
 
-**Industrial Automation**: Intelligent agents are used to control and optimize complex industrial processes, improving efficiency and reducing errors.
+* **Direction:** The direction of a vector is the direction in which it points. It can be represented by an angle or a unit vector.
 
-**Transportation**: Intelligent agents are used in intelligent transportation systems to manage traffic, reduce congestion, improve safety and optimize the use of resources.
 
-**Health**: Smart agents are used in medical applications for the diagnosis and treatment of diseases, healthcare management and clinical research.
+![alt text](../../../public/vector.png "Vector")
 
-**Finance**: Smart agents are used in financial applications for risk management, decision making and fraud detection.
 
-**Robotics**: Intelligent agents are used in robotics for movement control and planning, navigation and object recognition
+* **Linearity:** Vectors can be added and subtracted in a way that preserves their magnitude and direction.
+* **Associativity:** The order in which vectors are added or subtracted does not matter.
+* **Commutativity:** Vector addition and subtraction are commutative operations, meaning that the order of the vectors does not matter.
+* **Scalar multiplication:** Vectors can be multiplied by scalars, which are numbers. Scalar multiplication changes the magnitude of a vector but not its direction.
+* **Vector multiplication:** Vectors can be multiplied by other vectors. Vector multiplication is a more complex operation that can be used to find the area of a parallelogram or the volume of a parallelepiped.
 
+
+**Vector in computation and AI**
+
+In the field of computing, vectors are defined similarly to how they are defined in mathematics, but they are also used in specific contexts related to artificial intelligence (AI). In AI, vectors are used to represent and manipulate data in the form of one-dimensional arrays.
+
+In the context of AI, a vector can represent a specific entity or characteristic of a data set. For example, in natural language processing, a vector can represent a word in a vocabulary or an entire document. In image recognition, a vector can represent an image as a series of numerical values that describe the key features of that image.
+
+Vectors in AI are used in techniques such as machine learning and deep learning. For example, in machine learning, vectors are used to represent input and output features in machine learning models. These vectors can be used to train models and make predictions on new data.
+
+In addition, vectors are also used in dimensionality reduction techniques, such as principal component analysis (PCA) and t-SNE, where one seeks to represent complex data in a vector space of smaller dimension without losing important information.

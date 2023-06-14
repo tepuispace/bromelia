@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-us" class="initial">
+	<head>
+		<!-- Global Metadata --><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="alternate icon" type="image/x-icon" href="/favicon.ico">
+
+<link rel="sitemap" href="/sitemap.xml">
+
+<!-- Preload Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&display=swap" rel="stylesheet">
+
+<!-- Scrollable a11y code helper -->
+<script src="/make-scrollable-code-focusable.js"></script>
+
+<!-- This is intentionally inlined to avoid FOUC -->
+<script>
+	const root = document.documentElement;
+	const theme = localStorage.getItem('theme');
+	if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+		root.classList.add('dark');
+	} else {
+		root.classList.remove('dark');
+	}
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=" is:inline></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '');
+</script> -->
+
+		<!-- Page Metadata --><link rel="canonical" href="http://localhost:3000/mathematics-for-ai/functions/">
+
+<!-- OpenGraph Tags -->
+<meta property="og:title" content="AI Self-Study">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://localhost:3000/mathematics-for-ai/functions/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://astro.build/">
+<meta property="og:image:alt" content="">
+<meta name="description" property="og:description" content="This space is to summarize the topics related to AI and its real application">
+<meta property="og:site_name" content="AI Self-Study">
+
+<!-- Twitter Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="">
+<meta name="twitter:title" content="AI Self-Study">
+<meta name="twitter:description" content="This space is to summarize the topics related to AI and its real application">
+<meta name="twitter:image" content="https://astro.build/">
+<meta name="twitter:image:alt" content="">
+
+<!--
+  TODO: Add json+ld data, maybe https://schema.org/APIReference makes sense?
+  Docs: https://developers.google.com/search/docs/advanced/structured-data/intro-structured-data
+  https://www.npmjs.com/package/schema-dts seems like a great resource for implementing this.
+  Even better, there's a React component that integrates with `schema-dts`: https://github.com/google/react-schemaorg
+-->
+
+		<title>AI Self-Study</title>
+	<link rel="stylesheet" href="/assets/asset.543c3d91.css"></link>
+</head>
+
+	<body class="bg-slate-100">
+		<div class="sticky top-0 z-10 w-full">
+			<header class="p-3 bg-slate-100 bg-opacity-80 backdrop-blur-md border-b text-slate-900">
+	<a href="#article" class="sr-only focus:not-sr-only skiplink"><span>Skip to Content</span></a>
+
+	<nav title="Top Navigation" class="max-w-7xl mx-auto flex justify-between items-center px-4">
+		<div>
+			<a class="text-lg font-medium" href="/">
+				<h1>
+					AI Self-Study
+				</h1>
+			</a>
+		</div>
+		<div class="flex gap-2">
+		
+		<!-- <button onclick="toggleDarkMode()">theme</button> -->
+		<a title="Twitter" class="opacity-90 hover:opacity-100 hover:bg-blue-100 p-2 rounded-full transition-colors" href="https://twitter.com/@castillo9x">
+				<img class="h-7" src="/twitter.svg" alt="twitter logo">
+			</a>
+		<a title="Github" class="opacity-80 hover:opacity-100 hover:bg-slate-200 p-2 rounded-full transition-colors" href="https://github.com/rcastillo9x">
+				<img class="h-7" src="/github.svg" alt="github logo">
+			</a>
+		<a title="linkedin" class="opacity-80 hover:opacity-100 hover:bg-blue-50 p-2 rounded-full transition-colors" href="https://linkedin.com/in/randolfo-castillo-0451265">
+				<img class="h-7" src="/linkedin.svg" alt="linkedin logo">
+			</a>
+		</div>
+	</nav>
+</header>
+
+<script>
+	// function toggleDarkMode() {
+	// 	const body = document.body;
+	// 	body.classList.toggle('dark');
+	// 	console.log('dark mode toggled');
+	// }
+</script>
+
+		</div>
+		<div class="grid grid-cols-12">
+			<div class="col-span-3 sticky top-0 pt-12 h-screen flex">
+				<div class="ml-auto">
+					<aside title="Site Navigation">
+	<!-- <Debug content={navigation} /> -->
+	<nav aria-labelledby="grid-left" class="w-64 p-4 border-r">
+		<ul>
+			<li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a>Mathematics for AI</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/mathematics-for-ai/vector">Vector</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/mathematics-for-ai/matrices">Matrices</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/mathematics-for-ai/factorization">Factorizaction</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/mathematics-for-ai/fucntions">Functions</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/mathematics-for-ai/optimization">Optimization</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/mathematics-for-ai/probability">Probability</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/mathematics-for-ai/statistics">Statistics</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/mathematics-for-ai/statistical-learning">Statistical Learning</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/mathematics-for-ai/vector">Reasoning</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/mathematics-for-ai/vector">Types of architecture of intelligent agents</a>
+				</li><h2 class="mt-4 font-semibold text-slate-700">Information and knowledge.</h2><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/information/information">Data, Information ...</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/information/types">Types of data</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/information/knowledge">Knowledge</a>
+				</li><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/information/data-quality">Data quality</a>
+				</li><h2 class="mt-4 font-semibold text-slate-700">Patterns</h2><li class="block py-2 px-6  my-1 transition-colors border-l hover:border-slate-400 text-slate-500 hover:text-slate-900">
+					<a href="/patterns/introduction">Introduction</a>
+				</li>
+		</ul>
+	</nav>
+</aside>
+
+<script>
+	window.addEventListener('DOMContentLoaded', (event) => {
+		var target = document.querySelector('[aria-current="page"]');
+		if (target && target.offsetTop > window.innerHeight - 100) {
+			document.querySelector('.nav-groups').scrollTop = target.offsetTop;
+		}
+	});
+</script>
+
+
+				</div>
+			</div>
+			<main class="py-4 px-8 pb-32 col-span-6  overflow-auto">
+				<div>
+					<article id="article" class="content">
+	<section class="main-section">
+		<nav class="block sm:hidden">
+		</nav>
+		<h1 id="multi-agent-systems-mas">Multi-agent systems (MAS)</h1><p>Multi-agent systems (MAS) refer to a field of study in artificial intelligence (AI) that focuses on the design and development of intelligent agents that can interact, communicate, and cooperate with each other to achieve common goals. A multi-agent system consists of multiple autonomous agents, each capable of perceiving the environment, making decisions, and taking actions independently.</p><h2 id="characteristics-of-multi-agent-systems">Characteristics of Multi-Agent Systems:</h2><p>• <em>Autonomy</em>: Each agent in a multi-agent system operates autonomously, making its own decisions based on its individual goals, knowledge, and perception of the environment.</p><p>• <em>Communication</em>: Agents in a multi-agent system can communicate with each other through a shared communication channel or direct interactions. Communication enables agents to exchange information, coordinate activities, and negotiate to achieve collective goals.</p><p>• <em>Cooperation</em>: Multi-agent systems often involve agents collaborating and cooperating to solve complex problems or achieve shared objectives. Cooperation may involve task allocation, resource sharing, or division of labor among the agents.</p><p>• <em>Emergent behavior</em>: The interactions and collective behavior of multiple agents in a multi-agent system can give rise to emergent properties or behaviors that are not explicitly programmed. These emergent behaviors can be advantageous in problem-solving or decision-making.</p><p>• <em>Heterogeneity</em>: Agents in a multi-agent system can have different capabilities, knowledge, and roles, allowing for specialization and diversity in problem-solving approaches.</p><h2 id="applications-of-multi-agent-systems">Applications of Multi-Agent Systems:</h2><p>• <em>Robotics and Automation</em>: Multi-agent systems are applied in robotics for tasks such as cooperative manipulation, swarm robotics, and coordination of autonomous robots in complex environments.</p><p>• <em>Transportation and Traffic Management</em>: Multi-agent systems can optimize traffic flow, route planning, and resource allocation in transportation networks by coordinating the actions of autonomous vehicles or traffic control agents.</p><p>• <em>Distributed Control Systems</em>: Multi-agent systems are used in industrial automation, smart grids, and distributed control systems to coordinate and manage interconnected devices and systems.</p><p>• <em>E-commerce and Auctions</em>: Multi-agent systems are employed in online marketplaces and auctions to facilitate negotiation, bidding, and matching between buyers and sellers.</p><p>• <em>Simulation and Gaming</em>: Multi-agent systems are utilized in simulations and gaming environments to create realistic and interactive virtual worlds with intelligent computer-controlled characters or opponents.</p><p>• <em>Social Networks and Recommender Systems</em>: Multi-agent systems can be used in social networks and recommender systems to model and analyze user behaviors, personalize recommendations, and facilitate social interactions.</p>
+	</section>
+</article>
+
+
+				</div>
+			</main>
+			<div class="col-span-3 sticky top-0 h-screen flex">
+				<nav aria-labelledby="grid-right">
+	<div class="px-8">
+		<ul class="flex flex-col gap-4 mt-24">
+	<li class="text-slate-400 hover:text-slate-800 hover:text-slate-900">
+			#<a href="#multi-agent-systems-mas">Multi-agent systems (MAS)</a>
+		</li><li class="text-slate-400 hover:text-slate-800 hover:text-slate-900">
+			#<a href="#characteristics-of-multi-agent-systems">Characteristics of Multi-Agent Systems:</a>
+		</li><li class="text-slate-400 hover:text-slate-800 hover:text-slate-900">
+			#<a href="#applications-of-multi-agent-systems">Applications of Multi-Agent Systems:</a>
+		</li>
+</ul>
+	</div>
+</nav>
+			</div>
+		</div>
+	</body></html>
