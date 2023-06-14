@@ -6,6 +6,8 @@ import vue from "@astrojs/vue";
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://tepuispace.github.io',
+  base: '/bromelia',
   markdown: {
     remarkPlugins: [
       'remark-gfm', 'remark-smartypants',
